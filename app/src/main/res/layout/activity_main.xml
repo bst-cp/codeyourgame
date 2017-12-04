@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/mainBackground">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/appCompatButtonUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Play"
+        android:background="@color/colorAccent"
+        android:textColor="@color/mainBackground"/>
+
+</RelativeLayout>
