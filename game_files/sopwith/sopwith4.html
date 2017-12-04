@@ -1,0 +1,67 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" href="../w3.css">
+
+	<style type="text/css">
+	    #questions{
+	      position: absolute;
+	      z-index:2;
+	    }
+
+	    #vid{
+	      position: absolute;
+	      z-index:1;
+	    }		
+
+	</style>
+	
+	</head>
+
+
+	<body>
+		
+
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+	<div class="vid">
+	 <video src="sopwith4.mp4" id="myVideo" autoplay="autoplay">
+	   video not supported
+	 </video>
+	</div>
+
+	<script>
+	
+	    document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+	    function myHandler(e) {
+		window.location.href = "false_L2.html";
+	    }
+	</script>
+
+
+
+
+
+
+	</body>
+</html>

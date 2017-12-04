@@ -1,0 +1,67 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" href="w3.css">
+
+	<style type="text/css">
+	    #questions{
+	      position: absolute;
+	      z-index:2;
+	    }
+
+	    #vid{
+	      position: absolute;
+	      z-index:1;
+	    }		
+
+	</style>
+	
+	</head>
+
+
+	<body>
+		
+	<div class="w3-content w3-display-container" id="questions">
+	  <img class="mySlides" src="congrats.png" style="width:100%">
+
+	  <button class="w3-button w3-black w3-display-bottommiddle" onclick="compile()">Main menu</button>
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function compile() {
+		var s = "index.html"
+		window.location.href = s;
+	}
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+	<div class="vid">
+	 <img src="play.gif">
+	</div>
+
+
+
+
+
+
+
+
+	</body>
+</html>

@@ -1,0 +1,15 @@
+retux
+
+run
+
+while(tux on ice):
+	run
+
+while(no monsters)
+	run
+
+while(tux on ice):
+	if(no monsters):
+		run
+	else if (there is monster):
+		jump

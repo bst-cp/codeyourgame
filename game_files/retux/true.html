@@ -1,0 +1,44 @@
+<html>
+	<head>
+	
+	<link rel="stylesheet" href="../w3.css">
+
+	<style type="text/css">
+	    #questions{
+	      position: absolute;
+	      z-index:2;
+	    }
+
+	    #vid{
+	      position: absolute;
+	      z-index:1;
+	    }		
+
+	</style>
+	
+	</head>
+
+
+	<body>
+		
+	<div class="w3-content w3-display-container" id="questions">
+	  <img class="mySlides" src="../correct.png" style="width:100%">
+	  <button class="w3-button w3-black w3-display-bottommiddle" onclick="compile()">Continue</button>
+	</div>
+
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+	
+	function compile() {
+		var s = "../conrats.html"
+		window.location.href = s;
+	}
+
+
+	</script>
+
+
+
+	</body>
+</html>
